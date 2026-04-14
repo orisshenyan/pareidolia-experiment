@@ -1,0 +1,34 @@
+# Data output
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Stimulus images (large files — don't track)
+pictures/
+new_wn_pics/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PsychoPy logs
+*.log
+*.psydat

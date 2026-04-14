@@ -162,24 +162,3 @@ The script will automatically load the threshold from
 data/sub{ID}/sub{ID}_prac_opac.txt. If no threshold file is found,
 it falls back to a default opacity of 0.28.
 
-## Data output
-
-### Training 
-
-  *_trainingblock{NNN}.csv    CSV    Trial-level data
-  *_trainingblock{NNN}.pkl    Pickle Same data as Python list of dicts
-
-### Threshold estimation 
-
-  sub{ID}_prac_opac.txt            Text    Posterior median threshold
-  sub{ID}_bayes_threshold.csv      CSV     Summary statistics
-  sub{ID}_bayes_posterior.csv      CSV     Full posterior samples
-  sub{ID}_bayes_posterior.pkl      Pickle  Posterior + metadata
-
-### Main experiment 
-
-  *_mainblock{NNN}.csv             CSV     Trial-level data
-  *_block{NNN}.pkl                 Pickle  Same data as Python list of dicts
-  *_final_opac.csv                 CSV     Opacity used per block
-  *_final_opac.pkl                 Pickle  Same as above
-

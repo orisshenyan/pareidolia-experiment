@@ -183,38 +183,3 @@ it falls back to a default opacity of 0.28.
   *_final_opac.csv                 CSV     Opacity used per block
   *_final_opac.pkl                 Pickle  Same as above
 
-
-## Data Dictionary
-
-### Training Columns
-
-  Trial             int      Trial number within block (1-indexed)
-  Face_Response     float    Always 1 (face present on every trial)
-  Face_Confidence   float    1-4 confidence rating (0 = no response)
-  Face_Onset_Time   float    Trial onset time relative to block clock (s)
-  Face_Position_X   float    Face x-position in degrees (negative = left)
-  Noise_Number      float    Index of the last noise image shown
-  Face_Size         float    Face size in degrees of visual angle
-  Opacity           float    Face opacity on this trial (0.1-0.7)
-  Direction_Report  float    0 = none, 1 = left, 2 = right
-
-### Main Experiment Columns
-
-  Realface_response              float   1=detected, 0=missed, 80=catch trial
-  Realface_confidence            float   1-4 rating, NaN=none, 80=catch trial
-  Realface_Image_Onset_Time      float   Face onset time (s); 0 on catch trials
-  RealFace_Image_Response_Time   float   Space press time (s); 0 if not pressed
-  Hallucination_response         float   1=false alarm, 0=correct reject, 90=image trial
-  Hallucination_confidence       float   1-4 rating, NaN=none, 90=image trial
-  Noise_Onset_Time               float   Noise onset time (s); 0 on image trials
-  Hallucination_Response_Time    float   Space press time on catch trial (s)
-  ConfidenceScreen_Onset         float   Time confidence screen appeared (s)
-  Face_Position                  float   Face x-position (deg); 0 on catch trials
-  Noise_Number                   float   Last noise image index shown
-  Face_Size                      float   Face size (deg); 0 on catch trials
-
-#### Codes
-
-  80    This field belongs to a catch trial (no face shown)
-  90    This field belongs to an image trial (face shown)
-

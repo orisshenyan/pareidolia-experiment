@@ -10,10 +10,6 @@ __pycache__/
 dist/
 build/
 
-# Stimulus images (large files — don't track)
-pictures/
-new_wn_pics/
-
 # Virtual environment
 venv/
 .venv/
